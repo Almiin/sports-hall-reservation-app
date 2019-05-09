@@ -43,7 +43,7 @@ const styles = theme => ({
   }
 });
 
-class HallCard extends Component {
+class TerminCard extends Component {
   state = { expanded: false };
 
   handleExpandClick = () => {
@@ -85,7 +85,7 @@ class HallCard extends Component {
             title="Dvorana Grbavica"
           />
 
-          <ImageGallery items={images} src="" alt="" />
+          <img src={dvorana} alt="" />
           <CardMedia />
           <CardContent>
             <Row>
@@ -98,18 +98,18 @@ class HallCard extends Component {
               </Col>
               <Col>
                 <ul>
-                  <li style={{ color: "#1d8cf8 " }}>Futsal</li>
-                  <li style={{ color: "#1d8cf8 " }}>Košarka</li>
-                  <li style={{ color: "#1d8cf8 " }}>Rukomet</li>
+                  <li style={{ color: "#525f7f" }}>Igraci: 10</li>
+                  <li style={{ color: "#525f7f" }}>Vrijeme: 15:20 - 16:35</li>
+                  <li style={{ color: "#525f7f" }}>Cijena: 70 KM</li>
                 </ul>
               </Col>
             </Row>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton aria-label="Add to favorites">
-              <FavoriteIcon />
-            </IconButton>
-            <Button variant="outline-primary">Reserve</Button>
+            <div style={{ textAlign: "right", width: "100%", padding: "0" }}>
+              <Button variant="outline-primary">Join</Button>{" "}
+            </div>
+
             <IconButton
               className={classnames(classes.expand, {
                 [classes.expandOpen]: this.state.expanded
@@ -117,30 +117,8 @@ class HallCard extends Component {
               onClick={this.handleExpandClick}
               aria-expanded={this.state.expanded}
               aria-label="Show more"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
+            />
           </CardActions>
-          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph>
-                Osim za dvoranske sportove, dvorana je osposobljena i za
-                organiziranje kulturnih, sajamskih i ostalih sadržaja Pored
-                velike dvorane, objekat sadrži i podzemnu garažu, prostorije
-                predviđene za kuglanu i streljanu, malu salu za stoni tenis i
-                borilačke sportove, svlačionice i ostale pomoćne prostorije za
-                sportiste, VIP lože, salu za fitnes, kao i novinarske kabine i
-                prostorije za upravu.
-              </Typography>
-              <Typography paragraph>
-                U samoj dvorani postavljene su tribine sa oko 1.500 sjedećih
-                mjesta, koševi, golovi, mreža za odbojku, strunjače, semafori i
-                sva dodatna oprema. Dvorana je multifunkcionalna, te je
-                namijenjena kako za održavanje sportskih, tako i kulturnih
-                manifestacija.
-              </Typography>
-            </CardContent>
-          </Collapse>
         </Card>
         <br />
       </>
@@ -148,8 +126,8 @@ class HallCard extends Component {
   }
 }
 
-HallCard.propTypes = {
+TerminCard.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(HallCard);
+export default withStyles(styles)(TerminCard);

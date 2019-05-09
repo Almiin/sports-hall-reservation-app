@@ -10,7 +10,7 @@ class TournamentCard extends Component {
         <br />
         <Media
           style={{
-            border: "0.5px solid white",
+            border: "0.5px solid black",
             borderRadius: "10px",
             padding: "15px"
           }}
@@ -20,12 +20,14 @@ class TournamentCard extends Component {
             <img
               id="slika"
               src={dvorana}
-              style={{ height: "150px" }}
+              style={{ height: "170px" }}
               alt="haha"
             />
           </Media>
-          <Media body>
-            <Media heading>Internacionalni Nogometni Turniri Šampion</Media>
+          <Media body style={{ color: "black" }}>
+            <Media heading style={{ color: "black" }}>
+              Internacionalni Nogometni Turniri Šampion
+            </Media>
             Dječji nogometni turnir na umjetnim i travnatim terenima za
             kategorije:
             <br /> '06, '08, '10 Kategorije – muški U9 (2010.god. i mlađi)
@@ -33,9 +35,6 @@ class TournamentCard extends Component {
             8+1, pola igrališta U13(2006.god.i mlađi) sistem igre 10+1, cijelo
             igralište
           </Media>
-          <Button id="dugme" style={{ marginTop: "60px" }}>
-            Join
-          </Button>
         </Media>
 
         <br />

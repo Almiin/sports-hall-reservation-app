@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import IndexNavbar from "components/Navbars/IndexNavbar.jsx";
-import HallCard from "../../components/HallCard";
+import TerminCard from "../../components/TerminCard";
 import { Row, Col } from "reactstrap";
 
 class Termini extends Component {
@@ -22,31 +22,28 @@ class Termini extends Component {
               className="d-flex justify-content-center"
             >
               <div className="container-fluid">
-                <div className="d-sm-flex align-items-center justify-content-between mb-4">
-                  <h1 className="h3 mb-0 text-gray-800">Termini</h1>
-                </div>
                 <Row>
                   <Col>
-                    <HallCard />
+                    <TerminCard />
                   </Col>
                   <Col>
-                    <HallCard />
+                    <TerminCard />
                   </Col>
                 </Row>
                 <Row>
                   <Col>
-                    <HallCard />
+                    <TerminCard />
                   </Col>
                   <Col>
-                    <HallCard />
+                    <TerminCard />
                   </Col>
                 </Row>
                 <Row>
                   <Col>
-                    <HallCard />
+                    <TerminCard />
                   </Col>
                   <Col>
-                    <HallCard />
+                    <TerminCard />
                   </Col>
                 </Row>
               </div>

@@ -8,8 +8,8 @@ class Tournaments extends Component {
     return (
       <>
         <IndexNavbar />
-        <div className="section section-navbars">
-          <section className="mb-4">
+        <div className="section section-navbars" style={{ paddingTop: "80px" }}>
+          <section className="mb-4" style={{ backgroundColor: "white" }}>
             <div
               style={{
                 backgroundColor: "transparent",
@@ -20,9 +20,6 @@ class Tournaments extends Component {
               className="d-flex justify-content-center"
             >
               <div className="container-fluid">
-                <div className="d-sm-flex align-items-center justify-content-between mb-4">
-                  <h1 className="h3 mb-0 text-gray-800">Tournaments</h1>
-                </div>
                 <TournamentCard />
                 <TournamentCard />
                 <TournamentCard />
